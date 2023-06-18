@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Abel", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.row > * {
+  padding: 0;
+}
+
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  background: url("/assets/festival-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.background-square {
+  background-color: rgba(250, 250, 250, 0.2);
+  border-radius: 15px;
+}
+
+.control-label {
+  text-align: left !important;
+}
+
+.title-font {
+  font-family: "Abel", sans-serif;
+  font-weight: 600;
+}
+
+.title-font--outline {
+  font-family: "Bungee Outline", cursive;
+}
+
+.text-small {
+  font-size: 0.75rem;
+}
+
+/* Estilos específicos Login */
+.image-bg {
+  width: 100%;
+}
+
+.panel-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+
+.panel-bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  z-index: -1;
+  filter: grayscale(0.2);
+}
+
+.hidden {
+  display: none;
+}

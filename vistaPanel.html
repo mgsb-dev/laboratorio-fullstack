@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SonidoEstival2023-panel</title>
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Bungee+Outline&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="d-flex justify-content-center pt-1">
+        <h1 class="text-uppercase title-font--outline mb-5 text-black">
+          Sonido<span class="title-font text-black">Estival</span>2023
+        </h1>
+      </div>
+      <div>
+        <img src="assets/manager-bg.jpg" class="panel-bg" />
+        <ul class="d-flex flex-row gap-3">
+          <li
+            id="gestorBoton"
+            class="btn btn-outline-light d-flex flex-column align-items-center mr-2 text-small flex-grow-1"
+          >
+            <img class="panel-icon" src="assets/user.png" />
+            Mi perfil
+          </li>
+          <li
+            id="itinerarioBoton"
+            class="btn btn-outline-light d-flex flex-column align-items-center mr-2 text-small flex-grow-1"
+          >
+            <img class="panel-icon" src="assets/itinerary.png" />
+            Itinerarios
+          </li>
+          <li
+            id="mapaBoton"
+            class="btn btn-outline-light d-flex flex-column align-items-center text-small flex-grow-1"
+          >
+            <img class="panel-icon" src="assets/map.png" />
+            Mapa
+          </li>
+        </ul>
+        <div class="p-4">
+          <div id="tarjetaPerfil" class="background-square px-2 py-3">
+            <h2>Mi perfil</h2>
+            <div></div>
+          </div>
+          <div id="itinerario" class="background-square px-2 py-3">
+            Itinerario
+          </div>
+          <div id="mapa" class="background-square px-2 py-3">Mapa</div>
+        </div>
+        <div id="usuarios"></div>
+      </div>
+    </div>
+    <script src="panel.js"></script>
+    <script src="./php/panel.php"></script>
+  </body>
+</html>
